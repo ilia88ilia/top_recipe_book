@@ -19,6 +19,7 @@ import ua.com.alevel.service.ReactionService;
 import ua.com.alevel.util.SecurityUtil;
 import ua.com.alevel.web.data.PersistenceRequestData;
 
+import java.util.List;
 import java.util.Map;
 
 import static ua.com.alevel.util.WebRequestUtil.SEARCH_MESSAGE_PARAM;
@@ -120,6 +121,15 @@ public class PostServiceImpl implements PostService {
     @Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.REPEATABLE_READ, rollbackFor = Exception.class)
     public void dislike(Long id) {
         reactionProcess(id, false);
+    }
+
+
+    ///////
+    @Override
+    //@PreAuthorize("hasRole('ROLE_ADMIN')")
+    //@Transactional(readOnly = true)
+    public List<Post> findAllPosts() {
+        return postRepository.findAll();
     }
 
     private void validPost(Post post, Long personalId) {

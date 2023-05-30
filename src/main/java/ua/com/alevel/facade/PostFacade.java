@@ -2,6 +2,7 @@ package ua.com.alevel.facade;
 
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.multipart.MultipartFile;
+import ua.com.alevel.persistence.entity.post.Post;
 import ua.com.alevel.web.data.PageData;
 import ua.com.alevel.web.data.PersonalDashboardChartData;
 import ua.com.alevel.web.data.PostData;
@@ -15,6 +16,9 @@ public interface PostFacade {
     void update(PostData data, Long id);
     void delete(Long id);
     PageData<PostData> findAll(WebRequest request);
+
+    /////
+    List<Post> findAllPosts();
     PostResponseData findById(Long id);
     void like(Long id);
     void dislike(Long id);

@@ -5,22 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="add_project">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PersonalFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PersonalFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PersonalFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PersonalFacadeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/TopRecipeBookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/TopRecipeBookApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PersonalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PersonalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/personal_all.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,6 +72,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\resources" />
       <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\java\ua\com\alevel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\resources\templates\pages\user\admin\administration" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,8 +107,26 @@
       <option name="project" value="LOCAL" />
       <updated>1685462801710</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add_project">
+      <created>1685468016070</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685468016070</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
