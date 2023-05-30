@@ -40,7 +40,7 @@ public class SyncElasticCronService {
                 .stream()
                 .map(post -> {
                     PostIndex postIndex = new PostIndex();
-                    postIndex.setMessage(post.getMessage());
+                    postIndex.setTitle(post.getTitle());
                     return postIndex;
                 }).toList();
     }

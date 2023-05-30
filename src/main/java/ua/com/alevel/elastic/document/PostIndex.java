@@ -16,6 +16,6 @@ public class PostIndex {
     @Id
     private String id;
 
-    @Field(name = "message", type = FieldType.Text)
-    private String message;
+    @Field(name = "title", type = FieldType.Text)
+    private String title;
 }

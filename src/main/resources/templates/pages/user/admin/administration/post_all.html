@@ -16,11 +16,16 @@
       <div class="card mb-2 mt-2" style="background-color:rgba(0,0,0,0.5)">
         <div class="card-header" style="color:#E2D139">
           All Recipes
+          <form class="d-flex" method="post" th:action="@{/personal/post/search}">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="messages" th:name="query">
+            <button class="btn btn-outline-success"  style="color:#FFEF00" type="submit">Search</button>
+          </form>
         </div>
         <div class="card-body">
           <table class="table table-sm" style="color:#E4E1C8">
             <thead>
             <tr style="color:#E2D139">
+              <th>Id</th>
               <th>Dish</th>
               <th>Recipe</th>
               <th>Creation Date</th>
@@ -28,6 +33,7 @@
             </thead>
             <tbody>
             <tr th:each="posts: ${postList}">
+              <td th:text="${posts.getId()}"></td>
               <td th:text="${posts.getTitle()}"></td>
               <td th:text="${posts.getMessage()}"></td>
               <td th:text="${#calendars.format(posts.getCreated(),'dd MMMM yyyy')}"></td>

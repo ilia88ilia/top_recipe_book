@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="add_project">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/TopRecipeBookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/TopRecipeBookApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/PostRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/personal_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685468016070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add_project">
+      <created>1685473958713</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685473958713</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

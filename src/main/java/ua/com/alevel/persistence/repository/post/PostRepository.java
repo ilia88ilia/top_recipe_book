@@ -15,5 +15,5 @@ public interface PostRepository extends AbstractRepository<Post> {
     List<Post> findAllByPersonal(Personal personal);
     Page<Post> findAllByPersonal(Personal personal, Pageable pageable);
     Page<Post> findAllByPersonalIsNot(Personal personal, Pageable pageable);
-    Page<Post> findAllByPersonalIsNotAndMessageContainingIgnoreCase(Personal personal, String message, Pageable pageable);
+    Page<Post> findAllByPersonalIsNotAndMessageContainingIgnoreCase(Personal personal, String title, Pageable pageable);
 }

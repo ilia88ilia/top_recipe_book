@@ -39,7 +39,7 @@ public class ElasticPostSearchServiceImpl implements ElasticPostSearchService {
                         PostIndex.class,
                         IndexCoordinates.of(POST_INDEX));
         final List<String> suggestions = new ArrayList<>();
-        searchSuggestions.getSearchHits().forEach(searchHit-> suggestions.add(searchHit.getContent().getMessage()));
+        searchSuggestions.getSearchHits().forEach(searchHit-> suggestions.add(searchHit.getContent().getTitle()));
         return suggestions;
     }
 }

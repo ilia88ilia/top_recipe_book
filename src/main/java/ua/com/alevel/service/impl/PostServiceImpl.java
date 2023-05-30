@@ -126,8 +126,8 @@ public class PostServiceImpl implements PostService {
 
     ///////
     @Override
-    //@PreAuthorize("hasRole('ROLE_ADMIN')")
-    //@Transactional(readOnly = true)
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @Transactional(readOnly = true)
     public List<Post> findAllPosts() {
         return postRepository.findAll();
     }
