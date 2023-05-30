@@ -21,14 +21,18 @@
                     <table class="table table-sm" style="color:#E4E1C8">
                         <thead>
                         <tr style="color:#E2D139">
+                            <th>Id</th>
                             <th>Email</th>
                             <th>Creation Date</th>
+                            <th>Enabled</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr th:each="personal: ${pageData}">
-                            <td th:text="${personal.getEmail()}"></td>
-                            <td th:text="${#calendars.format(post.getCreated(),'dd MMMM yyyy')}"></td>
+                        <tr th:each="users: ${personalList}">
+                            <td th:text="${users.getId()}"></td>
+                            <td th:text="${users.getEmail()}"></td>
+                            <td th:text="${#calendars.format(users.getCreated(),'dd MMMM yyyy')}"></td>
+                            <td th:text="${users.getEnabled()}"></td>
                         </tr>
                         </tbody>
                     </table>

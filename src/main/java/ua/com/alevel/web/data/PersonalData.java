@@ -14,11 +14,13 @@ public class PersonalData {
     private Long id;
     private String email;
     private Date created;
+    private boolean enabled;
 
     public PersonalData(Personal personal) {
         this.id = personal.getId();
         this.email = personal.getEmail();
         this.created = personal.getCreated();
+        this.enabled = personal.getEnabled();
     }
 }
 

@@ -4,92 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="Create project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/TopRecipeBookApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/ElasticsearchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/SpringDataConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/impl/SecurityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/config/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/cron/SyncElasticCronService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/document/PostIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/repository/PostIndexRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/AuthValidatorFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PersonalFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/RegistrationFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/AuthValidatorFacadeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PersonalFacadeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/RegistrationFacadeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/handler/ErrorHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/post/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/post/Reaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/user/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/user/Personal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/entity/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/AbstractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/ReactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/user/AdminRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/user/PersonalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/type/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/CrudService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/ElasticPostSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/ReactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ElasticPostSearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PersonalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ReactionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/PostUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/SecurityUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PersonalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/AuthData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/KeyValueData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PageAndSizeData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PageData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersistenceRequestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalDashboardChartData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PostData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PostResponseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/SortData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/post_details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/admin_layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/personal_layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_my.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
+    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="add_project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PersonalFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PersonalFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PersonalFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PersonalFacadeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PersonalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PersonalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PersonalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/data/PersonalData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/post_administration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +24,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -158,11 +87,19 @@
       <option name="project" value="LOCAL" />
       <updated>1685459489213</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add_project">
+      <created>1685462801710</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685462801710</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create project" />
+    <MESSAGE value="add_project" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_project" />
   </component>
 </project>

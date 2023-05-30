@@ -1,10 +1,10 @@
 package ua.com.alevel.facade;
 
-import org.springframework.web.context.request.WebRequest;
-import ua.com.alevel.web.data.PageData;
-import ua.com.alevel.web.data.PersonalData;
+import ua.com.alevel.persistence.entity.user.Personal;
+
+import java.util.List;
 
 public interface PersonalFacade {
 
-    PageData<PersonalData> findAllPersonal(WebRequest request);
+    List<Personal> findAllPersonal();
 }

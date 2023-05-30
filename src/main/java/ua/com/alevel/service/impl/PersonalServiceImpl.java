@@ -1,7 +1,6 @@
 package ua.com.alevel.service.impl;
 
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Sort;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -11,8 +10,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import ua.com.alevel.persistence.entity.user.Personal;
 import ua.com.alevel.persistence.repository.user.PersonalRepository;
+import ua.com.alevel.persistence.repository.user.UserRepository;
 import ua.com.alevel.service.PersonalService;
-import ua.com.alevel.util.SecurityUtil;
 import ua.com.alevel.web.data.PersistenceRequestData;
 
 import java.util.List;
@@ -22,12 +21,15 @@ public class PersonalServiceImpl implements PersonalService {
 
     private final PersonalRepository personalRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final UserRepository userRepository;
 
     public PersonalServiceImpl(
             PersonalRepository personalRepository,
-            BCryptPasswordEncoder bCryptPasswordEncoder) {
+            BCryptPasswordEncoder bCryptPasswordEncoder,
+            UserRepository userRepository) {
         this.personalRepository = personalRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+        this.userRepository = userRepository;
     }
 
     @Override
@@ -57,17 +59,9 @@ public class PersonalServiceImpl implements PersonalService {
     }
 
     @Override
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @Transactional(readOnly = true)
-    public Page<Personal> findAll(PersistenceRequestData persistenceRequestData) {
-        Personal personal = (Personal) personalRepository
-                .findByEmail(SecurityUtil.getUsername())
-                .orElseThrow(() -> new RuntimeException("Personal not found"));
-        Sort sort = persistenceRequestData.getOrder().equals("desc") ?
-                Sort.by(Sort.Order.desc(persistenceRequestData.getSort())) :
-                Sort.by(Sort.Order.asc(persistenceRequestData.getSort()));
-        return (Page<Personal>) personalRepository.findAll();
-    }
+    public Page<Personal> findAll(PersistenceRequestData persistenceRequestData) { return null; }
+
+
 
     @Override
     @Transactional(readOnly = true)
@@ -89,4 +83,12 @@ public class PersonalServiceImpl implements PersonalService {
     public List<Personal> findAllByListId(List<Long> ids) {
         return personalRepository.findAllById(ids);
     }
+
+    @Override
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @Transactional(readOnly = true)
+    public List<Personal> findAllPersonal() {
+        return personalRepository.findAll();
+    }
+
 }

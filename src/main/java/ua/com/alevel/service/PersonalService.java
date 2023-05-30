@@ -10,4 +10,6 @@ public interface PersonalService extends UserService<Personal> {
     Personal findByEmail(String email);
     List<Personal> findAllByListId(List<Long> ids);
 
+    List<Personal> findAllPersonal();
+
 }
