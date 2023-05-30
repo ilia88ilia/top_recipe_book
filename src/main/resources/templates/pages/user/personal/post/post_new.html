@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/personal_layout}">
+<head>
+  <meta charset="utf-8">
+  <title>New Post</title>
+</head>
+<body>
+
+<div layout:fragment="personal_content">
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card mt-2" style="background-color:rgba(0,0,0,0.5)">
+        <div class="card-header" style="color:#E2D139">
+          <h4>New Recipe</h4>
+        </div>
+        <div class="card-body" style="color:#E4E1C8">
+          <form action="#" th:action="@{/personal/post/new}" th:object="${postForm}" method="post">
+            <div class="form-group">
+              <label for="title">Dish Name</label>
+              <input type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="type a dish name" th:field="*{title}" style="background-color:rgba(0,0,0,0.5); color:#E4E1C8">
+            </div>
+            <div class="form-group">
+              <label for="message">Recipe Description</label>
+              <textarea class="form-control" id="message" placeholder="write a recipe description" rows="6" th:field="*{message}" style="background-color:rgba(0,0,0,0.5); color:#E4E1C8"/>
+            </div>
+            <button type="submit" class="btn btn" style="background-color:#6DB397">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/personal_layout}">
+<head>
+    <meta charset="utf-8">
+    <title>My Recipes</title>
+</head>
+<body>
+
+<div layout:fragment="personal_content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2 mt-2" style="background-color:rgba(0,0,0,0.5)">
+                <div class="card-header" style="color:#E2D139">
+                    My Recipes
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm" style="color:#E4E1C8">
+                        <thead>
+                        <tr style="color:#E2D139">
+                            <th>Dish Name</th>
+                            <th>Creation Date</th>
+                            <th>Edit Recipe</th>
+                            <th>Remove Recipe</th>
+                            <th>View Recipe</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="post,iter : ${pageData.getItems()}">
+                            <td th:text="${post.getTitle()}"></td>
+                            <td th:text="${#calendars.format(post.getCreated(),'dd MMMM yyyy')}"></td>
+                            <td>
+                                <a th:href="@{'/personal/post/update/' + ${post.getId()}}" type="button" class="btn" style="background-color:#6DB397"> Edit </a>
+                            </td>
+                            <td>
+                                <a th:href="@{'/personal/post/delete/' + ${post.getId()}}" type="button" class="btn" style="background-color:#FF9191">Delete</a>
+                            </td>
+                            <td>
+                                <a th:href="@{'/personal/post/details/' + ${post.getId()} + '?reaction=false'}" type="button" class="btn" style="background-color:#6D8DB6"> Open </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card mt-2" style="background-color:rgba(0,0,0,0.5)">
+                <div class="card-header">
+                    <a type="button" class="btn btn" style="background-color:#6DB397" th:href="@{/personal/post/new}">Add New Recipe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

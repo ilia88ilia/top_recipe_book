@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/admin_layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Post administration</title>
+</head>
+<body>
+
+<div layout:fragment="admin_content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2 mt-2" style="background-color:rgba(0,0,0,0.5)">
+                <div class="card-header" style="color:#E2D139">
+                    All Personals
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm" style="color:#E4E1C8">
+                        <thead>
+                        <tr style="color:#E2D139">
+                            <th>Email</th>
+                            <th>Creation Date</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="personal: ${pageData}">
+                            <td th:text="${personal.getEmail()}"></td>
+                            <td th:text="${#calendars.format(post.getCreated(),'dd MMMM yyyy')}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
