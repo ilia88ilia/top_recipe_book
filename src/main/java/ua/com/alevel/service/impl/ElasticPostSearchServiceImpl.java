@@ -29,7 +29,7 @@ public class ElasticPostSearchServiceImpl implements ElasticPostSearchService {
     @Override
     public List<String> searchPostMessage(String query) {
         QueryBuilder queryBuilder = QueryBuilders
-                .wildcardQuery("dish", "*" + query.toLowerCase() + "*");
+                .wildcardQuery("title", "*" + query.toLowerCase() + "*");
         Query searchQuery = new NativeSearchQueryBuilder()
                 .withFilter(queryBuilder)
                 .withPageable(PageRequest.of(0, 5))

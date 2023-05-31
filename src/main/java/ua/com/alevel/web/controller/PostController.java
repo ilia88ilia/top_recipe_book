@@ -83,7 +83,7 @@ public class PostController {
         return "redirect:/personal/post/my";
     }
 
-    @PostMapping("/upload/{id}")
+   /* @PostMapping("/upload/{id}")
     public String uploadFile(@RequestParam("file") MultipartFile file, @PathVariable Integer id, RedirectAttributes attributes) {
         System.out.println("id = " + id);
         if (file.isEmpty()) {
@@ -92,7 +92,7 @@ public class PostController {
         }
         postFacade.uploadFile(file, id);
         return "redirect:/personal/post/details/" + id + "?reaction=false";
-    }
+    }*/
 
     @PostMapping("/search")
     private String searchPosts(@RequestParam String query, RedirectAttributes ra) {

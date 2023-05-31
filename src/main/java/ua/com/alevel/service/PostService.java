@@ -8,6 +8,5 @@ public interface PostService extends CrudService<Post> {
 
     void like(Long id);
     void dislike(Long id);
-
     List<Post> findAllPosts();
 }

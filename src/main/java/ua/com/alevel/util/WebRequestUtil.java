@@ -20,7 +20,7 @@ public class WebRequestUtil {
     public static final String DEFAULT_ORDER_PARAM_VALUE = "desc";
     public static final int DEFAULT_PAGE_PARAM_VALUE = 1;
     public static final int DEFAULT_SIZE_PARAM_VALUE = 10;
-    public static final String SEARCH_MESSAGE_PARAM = "searchTitle";
+    public static final String SEARCH_MESSAGE_PARAM = "searchMessage";
 
     public static PageAndSizeData generatePageAndSizeData(WebRequest webRequest) {
         int page = webRequest.getParameter(PAGE_PARAM) != null ? Integer.parseInt(Objects.requireNonNull(webRequest.getParameter(PAGE_PARAM))) : DEFAULT_PAGE_PARAM_VALUE;

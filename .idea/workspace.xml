@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="add_project">
+    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="fix_search">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/persistence/repository/post/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/document/PostIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/document/PostIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ElasticPostSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ElasticPostSearchServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +26,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="9546d462-8517-4bcb-8813-80d1a0aee7ff" />
+        <option name="url" value="https://github.com/ilia88ilia/top_recipe_book.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -53,7 +72,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/PC/IdeaProjects/top_recipe_book/src/main/resources"
+    "last_opened_file_path": "C:/Users/PC/IdeaProjects/top_recipe_book/src/main/resources/static/js"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -64,6 +83,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\resources\static\js" />
       <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\resources" />
       <recent name="C:\Users\PC\IdeaProjects\top_recipe_book\src\main\java\ua\com\alevel" />
     </key>
@@ -115,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685473958713</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix_search">
+      <created>1685479483890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685479483890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
     <MESSAGE value="add_project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add_project" />
+    <MESSAGE value="fix_search" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix_search" />
   </component>
 </project>

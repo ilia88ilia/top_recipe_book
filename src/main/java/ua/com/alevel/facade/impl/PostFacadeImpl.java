@@ -79,8 +79,6 @@ public class PostFacadeImpl implements PostFacade {
         return data;
     }
 
-
-    ///////////////
     @Override
     public List<Post> findAllPosts() {
         return postService.findAllPosts();

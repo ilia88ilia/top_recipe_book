@@ -16,8 +16,6 @@ public interface PostFacade {
     void update(PostData data, Long id);
     void delete(Long id);
     PageData<PostData> findAll(WebRequest request);
-
-    /////
     List<Post> findAllPosts();
     PostResponseData findById(Long id);
     void like(Long id);

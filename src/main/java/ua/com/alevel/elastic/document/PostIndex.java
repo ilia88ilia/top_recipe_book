@@ -9,7 +9,6 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 
 @Getter
 @Setter
-//@ToString
 @Document(indexName = "postindex")
 public class PostIndex {
 
