@@ -77,6 +77,18 @@ public class PostServiceImpl implements PostService {
         postRepository.delete(post);
         reactionService.deleteByPostId(post.getId());
     }
+    @Override
+    @PreAuthorize("hasRole('ROLE_Admin')")
+    @Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.REPEATABLE_READ, rollbackFor = Exception.class)
+    public void deleteAsAdmin(Long id) {
+        /*Personal personal = (Personal) personalRepository
+                .findByEmail(SecurityUtil.getUsername())
+                .orElseThrow(() -> new RuntimeException("Personal not found"));*/
+        Post post = postRepository.findById(id).orElse(null);
+        //validPost(post, personal.getId());
+        postRepository.delete(post);
+        reactionService.deleteByPostId(post.getId());
+    }
 
     @Override
     @PreAuthorize("hasRole('ROLE_PERSONAL')")

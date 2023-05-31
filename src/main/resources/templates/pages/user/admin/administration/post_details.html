@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragments/admin_layout}">
+<head>
+    <meta charset="utf-8">
+    <title>Recipe Description</title>
+</head>
+<body>
+
+<div layout:fragment="admin_content">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-2 mt-2" style="background-color:rgba(0,0,0,0.5)">
+                <div class="card-header" style="color:#E2D139">
+                    Recipe Description
+                </div>
+                <div class="card-body">
+                    <table class="table" style="color:#E4E1C8">
+                        <tr>
+                            <th>Dish Id</th>
+                            <td th:text="${postFullData.getId()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Dish Name</th>
+                            <td th:text="${postFullData.getTitle()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Recipe</th>
+                            <td th:text="${postFullData.getMessage()}"></td>
+                        </tr>
+                        <tr>
+                            <th>Created</th>
+                            <td th:text="${#calendars.format(postFullData.getCreated(),'dd MMMM yyyy')}"></td>
+                        </tr>
+                        <tr>
+                            <th>like</th>
+                            <td>
+                                <div id="like-section" class="like-dislike-section"
+                                     th:data-like-info="${postFullData.getLikes()}">
+                                    <div th:if="not ${postFullData.getLikes().isEmpty()}">
+                                        <div th:text="${postFullData.getLikes().values().size()}">
+                                        </div>
+                                    </div>
+                                    <div th:unless="not ${postFullData.getLikes().isEmpty()}">
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>dislike</th>
+                            <td>
+                                <div id="dislike-section" class="like-dislike-section"
+                                     th:data-like-info="${postFullData.getDislikes()}">
+                                    <div th:if="not ${postFullData.getDislikes().isEmpty()}">
+                                        <div th:text="${postFullData.getDislikes().values().size()}">
+                                        </div>
+                                    </div>
+                                    <div th:unless="not ${postFullData.getDislikes().isEmpty()}">
+                                        <span>0</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<th:block layout:fragment="scripts">
+    <script type="text/javascript" th:src="@{/js/post_details.js}"></script>
+</th:block>
+
+</body>
+</html>

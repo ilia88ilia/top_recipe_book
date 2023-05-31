@@ -51,7 +51,7 @@
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
                         <input type="password" th:field="*{password}" class="form-control" placeholder="Password">
-                        <span class="has-error" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+                        <span class="has-error"  th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">

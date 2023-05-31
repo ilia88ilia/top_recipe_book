@@ -24,7 +24,6 @@
                             <th>Id</th>
                             <th>Email</th>
                             <th>Creation Date</th>
-                            <th>Enabled</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -32,7 +31,6 @@
                             <td th:text="${users.getId()}"></td>
                             <td th:text="${users.getEmail()}"></td>
                             <td th:text="${#calendars.format(users.getCreated(),'dd MMMM yyyy')}"></td>
-                            <td th:text="${users.getEnabled()}"></td>
                         </tr>
                         </tbody>
                     </table>

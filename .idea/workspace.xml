@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="fix_search">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+    <list default="true" id="123e44b5-1d9d-467a-a967-c11675d063ae" name="Changes" comment="elastic_search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/document/PostIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/elastic/document/PostIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/PostFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/facade/impl/PostFacadeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ElasticPostSearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/ElasticPostSearchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/util/WebRequestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdministrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/AdministrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/com/alevel/web/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/personal_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/personal_all.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/admin/administration/post_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/user/personal/post/post_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685479483890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="elastic_search">
+      <created>1685492508527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685492508527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +164,7 @@
     <MESSAGE value="Create project" />
     <MESSAGE value="add_project" />
     <MESSAGE value="fix_search" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix_search" />
+    <MESSAGE value="elastic_search" />
+    <option name="LAST_COMMIT_MESSAGE" value="elastic_search" />
   </component>
 </project>

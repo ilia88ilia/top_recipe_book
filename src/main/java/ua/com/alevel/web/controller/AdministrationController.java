@@ -5,6 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import ua.com.alevel.facade.PersonalFacade;
 import ua.com.alevel.facade.PostFacade;
 import ua.com.alevel.persistence.entity.post.Post;
@@ -31,10 +32,11 @@ public class AdministrationController {
         return "pages/user/admin/administration/post_all";
     }
 
-    @GetMapping("/delete/{id}")
-    public String delete(@PathVariable Long id) {
-        postFacade.delete(id);
-        return "redirect:/pages/user/admin/administration/post_all";
+    @GetMapping("/post_details/{id}")
+    public String details(Model model, @PathVariable Long id, @RequestParam("reaction") boolean reaction) {
+        model.addAttribute("postFullData", postFacade.findById(id));
+        model.addAttribute("reaction", reaction);
+        return "pages/user/admin/administration/post_details";
     }
 
     @GetMapping("/personal_all")

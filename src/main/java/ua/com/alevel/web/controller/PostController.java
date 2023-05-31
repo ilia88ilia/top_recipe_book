@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import ua.com.alevel.facade.PostFacade;
 import ua.com.alevel.util.WebRequestUtil;
@@ -82,17 +81,6 @@ public class PostController {
         postFacade.delete(id);
         return "redirect:/personal/post/my";
     }
-
-   /* @PostMapping("/upload/{id}")
-    public String uploadFile(@RequestParam("file") MultipartFile file, @PathVariable Integer id, RedirectAttributes attributes) {
-        System.out.println("id = " + id);
-        if (file.isEmpty()) {
-            attributes.addFlashAttribute("message", "Please select a file to upload.");
-            return "redirect:/personal/post/details/" + id + "?reaction=false";
-        }
-        postFacade.uploadFile(file, id);
-        return "redirect:/personal/post/details/" + id + "?reaction=false";
-    }*/
 
     @PostMapping("/search")
     private String searchPosts(@RequestParam String query, RedirectAttributes ra) {
